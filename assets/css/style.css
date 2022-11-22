@@ -232,7 +232,14 @@ nav>.header_menu>li>a {
     text-align: justify;
 }
 
-.content>footer {
+.content>.container {
+    flex: 1;
+    margin: 3rem 7rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+footer {
     display: flex;
     flex-direction: column;
     width: 100vw;
