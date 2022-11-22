@@ -114,6 +114,9 @@ nav {
     cursor: pointer;
 }
 
+.content>aside>.aside_list>li>span{
+    color: var(--text-color);
+}
 
 .content>section {
     flex: 2;
@@ -142,6 +145,15 @@ footer>.footer_header {
 
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+footer>.footer_header>span {
+    font-size: 1.6rem;
+}
+
+footer>.footer_header>span,
+footer>.footer_header>p {
+    margin: 1rem;
 }
 
 footer>.footer_content {
