@@ -13,7 +13,6 @@
 }
 
 /* Area de reset para o css */
-
 * {
     margin: 0;
     padding: 0;
@@ -68,6 +67,22 @@ nav>.left>.humburguer {
     padding: .5rem;
 }
 
+nav>.left>.humburguer>input {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 7px;
+    left: 30px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+}
+
 nav>.left>.humburguer>span {
     display: block;
     width: 33px;
@@ -85,6 +100,60 @@ nav>.left>.humburguer>span {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
         background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
         opacity 0.55s ease;
+}
+
+nav>.left>.humburguer>span:first-child {
+    transform-origin: 0% 0%;
+}
+
+nav>.left>.humburguer>span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+nav>.left>.humburguer>input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: var(--text-color);
+}
+
+nav>.left>.humburguer>input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+nav>.left>.humburguer>input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(-2px, -1px);
+}
+
+nav>.left>.humburguer>.menu {
+  position: absolute;
+    width: 100vw;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: var(--secondary-color);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+nav>.left>.humburguer>.menu>li {
+  padding: 10px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav>.left>.humburguer>.menu>li>a{
+    color: var(--text-secondary-color);
+}
+
+nav>.left>.humburguer>input:checked ~ ol {
+    transform: none;
 }
 
 nav>.header_menu {
