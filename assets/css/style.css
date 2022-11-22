@@ -45,10 +45,14 @@ nav,
 .header_menu {
     display: flex;
     align-items: center;
-    margin: .5rem;
 }
 
 nav {
+    padding: .5rem;
+    background-color: var(--secondary-color);
+}
+
+nav>.left{
     margin-left: 1rem;
 }
 
