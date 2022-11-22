@@ -1,0 +1,179 @@
+:root {
+    /* Variaveis responsaveis por cores do projeto */
+    --primary-color: rgb(120, 189, 36);
+    --secondary-color: rgb(230, 90, 48);
+    --border-color: rgb(40, 44, 78);
+    --background-color: rgb(212, 156, 156);
+    --secondary-background-color: rgb(53, 48, 48);
+    --text-color: black;
+    --text-secondary-color: rgb(247, 243, 243);
+
+    /* Variaveis responsaveis por font */
+    --font-size: 16px;
+}
+
+/* Area de reset para o css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: var(--font-size);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+/* Para o cabeçalho do site
+    Configurações para o nosso menu de navegação
+*/
+nav,
+.header_menu {
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
+
+nav {
+    margin-left: 1rem;
+}
+
+.header_menu {
+    flex: 1;
+    justify-content: right;
+}
+
+.header_menu > li {
+    padding: 1rem;
+    margin: 0 .5rem;
+}
+
+.header_menu > li:hover, 
+.header_menu > li:active {
+    background-color: var(--primary-color);
+    border-radius: .8rem;
+}
+
+.header_menu > li > a {
+    color: var(--text-secondary-color);
+    font-weight: bold;
+}
+
+/* Configuração para o nosso conteudo do site */
+.content {
+    flex: 1;
+    display: flex;
+}
+
+.content > aside {
+    flex: 1;
+    padding: 1rem;
+    color: var(--secondary-color);
+}
+
+.content > aside > .aside_header {
+    display: flex;
+    padding: 1rem .5rem;
+    background-color: var(--secondary-background-color);
+
+    border-radius: .8rem .8rem 0 0;
+}
+
+.content > aside > .aside_header > .title {
+    margin-left: 1rem;
+}
+
+.content > aside > .aside_list {
+    padding: 1rem .5rem;
+    background-color: var(--secondary-color);
+
+    border-radius: 0 0 .8rem .8rem;
+}
+
+.content > aside > .aside_list > li {
+    padding: .5rem;
+}
+
+.content > aside > .aside_list > li:hover {
+    background-color: var(--primary-color);
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+
+.content > section {
+    flex: 2;
+}
+
+.content > footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+}
+
+
+/* Configuração para o nosso rodapé do site */
+
+footer > .footer_header {
+    flex: 1;
+    text-align: center;
+    padding: .5rem;
+
+    background-color: var(--secondary-background-color);
+    color: var(--text-secondary-color);
+
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer > .footer_content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    
+    background-color: var(--secondary-color);
+    color: var(--text-secondary-color);
+
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer > .footer_content > .left,
+footer > .footer_content > .right {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer > .footer_content > .line {
+    width: .1rem;
+    height: auto;
+    
+    border: .1rem solid var(--border-color);
+}
+
+footer > .footer_message {
+    flex: 1;
+    padding: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--secondary-background-color);
+    color: var(--text-secondary-color);
+}
