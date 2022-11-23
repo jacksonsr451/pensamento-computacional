@@ -23,7 +23,7 @@ Layout responsivo
 
 ___
 
-Contédudo sobre Pensamento Computacional
+### Contédudo sobre Pensamento Computacional
 
 O site é desenvolvido para fins educacionais, pensado em linguagens de programação, marcação e de estilos.
 
