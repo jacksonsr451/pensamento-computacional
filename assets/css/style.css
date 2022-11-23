@@ -63,6 +63,11 @@ nav>.left>.logo>a {
     color: var(--text-secondary-color);
 }
 
+nav>.left>.logo>a>img {
+    width: 100px;
+    margin-top: -1rem;
+}
+
 nav>.left>.humburguer {
     padding: .5rem;
 }
@@ -328,6 +333,9 @@ footer>.footer_message {
 }
 
 @media (min-width: 600px) {
+    nav>.left>.humburguer {
+        display: none;
+    }
     nav>.left>.humburguer>span {
         display: none;
     }
