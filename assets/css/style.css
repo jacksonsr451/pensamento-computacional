@@ -239,7 +239,7 @@ nav>.header_menu>li>a {
 
 .content>.container {
     flex: 1;
-    margin: 3rem 7rem;
+    margin: 1rem;
     font-size: 1.2rem;
     text-align: justify;
 }
@@ -358,6 +358,10 @@ footer>.footer_message {
 
     .content>section {
         flex: 3;
+    }
+
+    .content>.container {
+        margin: 3rem 7rem;
     }
 
     footer>.footer_content {
